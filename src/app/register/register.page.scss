@@ -1,0 +1,62 @@
+.fondo-principal {
+  --background: url(../../assets/img/FONDO_COMPLETO.jpg) 0 0/100% 100% no-repeat;
+}
+
+.card-contener {
+  margin-top: 10px;
+}
+
+.imagen-principal {
+  width: 60px;
+  height: 60px;
+}
+
+.boton-basic {
+  //margin: 12px;
+  --background: transparent !important;
+  border: solid 0.5px white;
+  border-radius: 26px;
+  // height: auto;
+}
+
+ion-footer {
+  &.footer-md::before {
+    background-image: none;
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+ion-toolbar {
+  --background: transparent !important;
+  --ion-color-base: transparent !important;
+}
+
+.scroll-content {
+  margin-bottom: 0 !important;
+}
+
+.texto-form {
+  font-size: 11px;
+  color: white;
+}
+
+.texto-form-input {
+  font-size: 11px;
+  color: white;
+  border-bottom: solid 0.5px white;
+}
+
+.fonto-item {
+  --background: transparent;
+}
+
+.botonGuaradar {
+  width: 100%;
+}
+
+.item-has-focus.label-stacked.sc-ion-label-md-h:not(.ion-color),
+.item-has-focus .label-stacked.sc-ion-label-md-h:not(.ion-color),
+.item-has-focus.label-floating.sc-ion-label-md-h:not(.ion-color),
+.item-has-focus .label-floating.sc-ion-label-md-h:not(.ion-color) {
+  color: var(--ion-color-primary, white) !important;
+}

@@ -1,0 +1,90 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button style="color: white;"></ion-menu-button>
+    </ion-buttons>
+    <ion-title style="text-align: center; font-family: HARLOWSI_1; color: white;">Premi App</ion-title>
+    <ion-buttons slot="end">
+      <ion-icon name="folder-open-outline" [routerLink]="['../categorias']"
+        style="margin: 6px;font-size: 20px;color: white;"></ion-icon>
+    </ion-buttons>
+
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-list style="background: transparent;">
+    <ion-item lines="none">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <img src="../../../assets/imagenes/ICONO LINKEDIN.png">
+          </ion-col>
+
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <h3 style="color: white;">Cursos Gratis en LinkedIN</h3>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col text-center style="text-align: center;width: 100%;">
+            <p style="color: white;">
+              <ion-icon name="person-outline" style="font-size: 40px;"></ion-icon>
+            </p>
+            <p style="color: white;">{{contador}} Personas</p>
+
+          </ion-col>
+          <ion-col text-center style="text-align: center;">
+            <p style="color: white;">
+              <ion-icon name="time-outline" style="font-size: 40px;"></ion-icon>
+            </p>
+            <p style="color: white;">Finaliza <br>01-02-03</p>
+          </ion-col>
+          <ion-col text-center style="text-align: center;">
+            <p style="color: white;">
+              <ion-icon name="people-circle-outline" style="font-size: 40px;"></ion-icon>
+            </p>
+            <p style="color: white;">Participantes 4.280</p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="1">
+
+          </ion-col>
+          <ion-col size="10">
+            <p style="color: #fff ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam illum, eius sint
+              eveniet ullam nostrum iure distinctio quo neque temporibus maiores harum blanditiis, tempora consectetur
+              eaque dolor quia, placeat aspernatur?</p>
+
+          </ion-col>
+          <ion-col size="1">
+
+          </ion-col>
+
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+  </ion-list>
+  <ion-tabs>
+
+    <ion-tab-bar slot="bottom">
+
+      <ion-tab-button (click)="ShareFacebook()">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button (click)="SendTwitter()">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button (click)="ShareWhatsapp()">
+        <ion-icon name="logo-whatsapp"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button (click)="ShareGeneric('Texto de prueba')">
+        <ion-icon name="share-social-outline"></ion-icon>
+      </ion-tab-button>
+
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "premiApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

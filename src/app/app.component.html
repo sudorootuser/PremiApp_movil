@@ -1,0 +1,68 @@
+<ion-app>
+  <ion-split-pane contentId="main-content">
+    <ion-menu contentId="main-content" type="overlay">
+      <ion-content>
+        <ion-list>
+          <ion-menu-toggle auto-hide="false">
+            <ion-row>
+              <ion-col size="1">
+              </ion-col>
+              <ion-col style="text-align: center;" size="auto">
+                <img src="{{imgsTorage ? imgsTorage : '../assets/img/fotoPerfil.png'}}" alt="">
+                <h4 style="color:#fff; font-style:italic; font-size: 22px; font-family: HARLOWSI_1;"> {{localStorage ? localStorage : 'Default'}}</h4>
+              </ion-col>
+              <ion-col size="1">
+              </ion-col>
+            </ion-row>
+            <br>
+            <ion-item lines="none">
+              <ion-label>
+                <ion-icon name="gift-outline" [routerLink]="['/my-gifts']"></ion-icon> Mis premios
+              </ion-label>
+            </ion-item>
+
+            <ion-item lines="none">
+              <ion-label>
+                <ion-icon name="share-social-outline" [routerLink]="['/share']"></ion-icon> Compartir
+              </ion-label>
+            </ion-item>
+
+            <ion-item lines="none">
+              <ion-label>
+                <ion-icon name="newspaper-outline" [routerLink]="['/terms']"></ion-icon> Terminos y Condiciones
+              </ion-label>
+            </ion-item>
+
+            <ion-item lines="none">
+              <ion-label>
+                <ion-icon name="person-outline" [routerLink]="['/profile']"></ion-icon> Perfil
+              </ion-label>
+            </ion-item>
+
+            <ion-item lines="none">
+              <ion-label>
+                <ion-icon name="people-outline" [routerLink]="['/about']"></ion-icon> Quienes Somos
+              </ion-label>
+            </ion-item>
+
+            <ion-item [routerDirection]="'root'" [routerLink]="'/folder'" lines="none">
+              <ion-label>
+                <ion-icon name="cube-outline" [routerLink]="['/products']"></ion-icon> Productos
+              </ion-label>
+            </ion-item>
+
+            <ion-item lines="none" [routerDirection]="'root'">
+              <ion-label>
+                <ion-icon name="exit-outline"></ion-icon> <a lines="none" (click)="logOut()"> Salir</a>
+              </ion-label>
+            </ion-item>
+
+          </ion-menu-toggle>
+        </ion-list>
+        <span style="color:#adb5bd; font-style:italic; font-size: 17px; font-family: HARLOWSI_1;"> Create for: Sebastián Hernández</span>
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>
+<!-- Nisekoi -->

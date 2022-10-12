@@ -1,0 +1,39 @@
+.fondo-principal {
+  --background: url(../../assets/img/FONDO_COMPLETO.jpg) 0 0/100% 100% no-repeat;
+}
+.card-contener {
+  margin-top: 10%;
+}
+
+.imagen-principal {
+  width: 120px;
+  height: 120px;
+}
+
+.boton-basic {
+  //margin: 12px;
+  --background: transparent !important;
+  border: solid 0.5px white;
+  border-radius: 26px;
+  // height: auto;
+}
+
+ion-footer {
+  &.footer-md::before {
+    background-image: none;
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+ion-toolbar {
+  --background: transparent !important;
+  --ion-color-base: transparent !important;
+}
+
+.scroll-content {
+  margin-bottom: 0 !important;
+}
+
+ion-item{
+  --background: transparent;
+}

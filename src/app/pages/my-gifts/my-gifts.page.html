@@ -1,0 +1,79 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button style="color: white;"></ion-menu-button>
+    </ion-buttons>
+    <ion-title style="text-align: center; font-family: HARLOWSI_1; color: white;">Premi App</ion-title>
+    <ion-buttons slot="end">
+      <ion-icon name="settings-outline" style="margin: 6px;font-size: 20px;color: white;"></ion-icon>
+    </ion-buttons>
+
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- <ion-fab vertical="top" horizontal="end" slot="fixed">
+    <ion-fab-button style="margin-top: -35px;width: 25px; height: 25px;color: white;">
+      <ion-icon name="settings-outline"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="buttom">
+      <ion-fab-button>
+        <ion-icon name="logo-facebook"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="logo-twitter"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="logo-youtube"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab> -->
+
+  <ion-list style="background: transparent;">
+    <ion-row style="padding: 0px 20px ;">
+      <ion-col size="9">
+        <ion-item lines="none">
+          <span style="color: white;">Productos</span>
+        </ion-item>
+      </ion-col>
+      <ion-col size="3">
+        <ion-button [routerLink]="['../agregar']" color="light" expand="block" shape="round">
+          Agregar
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+
+  </ion-list>
+  <ion-list style="background: transparent;">
+    <ion-item lines="none">
+      <ion-grid>
+        <ion-row>
+          <ion-col routerLink="['/detail']">
+            <img src="../../assets/img/ICONO FORNITE.png">
+          </ion-col>
+          <ion-col routerLink="['/detail:id']">
+            <img src="../../assets/img/ICONO FIFA.png">
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col routerLink="['/detail:id']">
+            <img src="../../assets/img/ICONO HARD ROCK.png">
+          </ion-col>
+          <ion-col routerLink="['/detail']">
+            <img src="../../assets/img/ICONO ISLA MORADA.png">
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col routerLink="['/detail']">
+            <img src="../../assets/img/ICONO NETFLIX.png">
+          </ion-col>
+          <ion-col routerLink="['/detail']">
+            <img src="../../assets/img/ICONO LINKEDIN.png">
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+  </ion-list>
+</ion-content>

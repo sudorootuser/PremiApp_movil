@@ -1,0 +1,68 @@
+<ion-content class="fondo-principal">
+  <div class="text-center card-contener">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+        </ion-col>
+        <ion-col>
+          <img src="../../../assets/img/LOGO_PRINCIPAL_PREMIAPP.png" alt="" class="imagen-principal">
+        </ion-col>
+        <ion-col>
+
+        </ion-col>
+      </ion-row>
+      <br><br>
+      <ion-row>
+        <ion-col text-center class="ion-text-center">
+          <ion-item lines="none">
+            <ion-label position="floating" style="color: white;font-size: 12px;">Correo</ion-label>
+            <ion-input type="text" [(ngModel)]="username" style="border-bottom: solid 0.5px white;color: white;"></ion-input>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-label position="floating" style="color: white;font-size: 12px;">Contraseña</ion-label>
+            <ion-input type="password" [(ngModel)]="password" style="border-bottom: solid 0.5px white;color: white;"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <br>
+      <br>
+      <ion-row>
+        <ion-col text-center class="ion-text-center">
+          <ion-button style="width: 60%;" class="boton-basic" shape="round" (click)="next()">
+            INGRESAR
+          </ion-button>
+          <!-- <ion-button style="width: 60%;" class="boton-basic" shape="round" [routerLink]="['/home']">
+            INGRESO APP
+          </ion-button> -->
+        </ion-col>
+      </ion-row>
+      <br>
+      <ion-row>
+        <ion-col text-center class="ion-text-center">
+          <p style="color: white;">o ingresar por:</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6" text-center class="ion-text-center" (click)="loginGoogle()">
+          <ion-icon name="logo-google" style="margin: 10px;font-size: 35px;color: white;">
+          </ion-icon>
+          <p style="color: white;">Google</p>
+        </ion-col>
+        <ion-col size="6" text-center class="ion-text-center">
+          <ion-icon name="logo-facebook" style="margin: 10px;font-size: 35px; color: white;">
+          </ion-icon>
+          <p style="color:white;">Facebook</p>
+        </ion-col>
+      </ion-row>
+      <br><br>
+      <ion-row>
+        <ion-col text-center class="ion-text-center">
+          <a [routerLink]="['/register']" style="color: white;text-decoration: none;">Si no tinene cuenta
+            registrese
+            <span style="font-weight: bold;">!Aquí¡</span></a>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+</ion-content>

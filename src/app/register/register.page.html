@@ -1,0 +1,81 @@
+<ion-content class="fondo-principal">
+
+  <div class="text-center card-contener">
+    <ion-grid>
+      <!-- Register title -->
+      <ion-row>
+        <ion-col class="ion-text-center">
+          <p style="font-size: 20px;color: white;font-weight: bold;"><span style="font-family: HARLOWSI_1;">R</span> egistro de usuario</p>
+        </ion-col>
+      </ion-row>
+
+      <!-- Form Data -->
+      <ion-row>
+        <ion-col>
+          <ion-card style="--background: transparent;border: solid 0.5px white;">
+            <ion-card-content>
+              <ion-item class="fonto-item" lines="none">
+                <ion-label position="floating" class="texto-form">Nombre Completo</ion-label>
+                <ion-input type="text" class="texto-form-input" [(ngModel)]="name"></ion-input>
+              </ion-item>
+
+              <ion-item class="fonto-item" lines="none">
+                <ion-label class="texto-form" position="floating">Tipo Documento</ion-label>
+                <ion-select class="texto-form-input" [(ngModel)]="tipoDoc">
+                  <ion-select-option value="1">Cedula Ciudadania</ion-select-option>
+                  <ion-select-option value="2">Cedula Extranjeria</ion-select-option>
+                  <ion-select-option value="3">NIT</ion-select-option>
+                </ion-select>
+              </ion-item>
+
+              <ion-item class="fonto-item" lines="none">
+                <ion-label class="texto-form" position="floating">Numero Documento</ion-label>
+                <ion-input class="texto-form-input" type="number" [(ngModel)]="document"></ion-input>
+              </ion-item>
+
+              <ion-item class="fonto-item" lines="none">
+                <ion-label class="texto-form" position="floating">Fecha Nacimiento</ion-label>
+                <ion-input class="texto-form-input" type="date" [(ngModel)]="dateNac"></ion-input>
+              </ion-item>
+
+              <ion-item class="fonto-item" lines="none">
+                <ion-label class="texto-form" position="floating">Email</ion-label>
+                <ion-input class="texto-form-input" type="email" [(ngModel)]="email"></ion-input>
+              </ion-item>
+
+              <ion-item class="fonto-item" lines="none">
+                <ion-label class="texto-form" position="floating">Teléfono</ion-label>
+                <ion-input class="texto-form-input" type="phone" [(ngModel)]="telefono"></ion-input>
+              </ion-item>
+
+              <ion-item class="fonto-item" lines="none">
+                <ion-label class="texto-form" position="floating">Usuario</ion-label>
+                <ion-input class="texto-form-input" type="text" [(ngModel)]="userName"></ion-input>
+              </ion-item>
+
+              <ion-item class="fonto-item" lines="none">
+                <ion-label class="texto-form" position="floating">Contraseña</ion-label>
+                <ion-input class="texto-form-input" type="password" [(ngModel)]="password"></ion-input>
+              </ion-item>
+
+              <ion-item class="fonto-item" lines="none">
+                <ion-label class="texto-form" position="floating">Confirmar contraseña</ion-label>
+                <ion-input class="texto-form-input" type="password" [(ngModel)]="rePassword"></ion-input>
+              </ion-item>
+
+              <br>
+              <ion-item class="fonto-item ion-text-center" lines="none">
+                <ion-button class="botonGuaradar" expand="block" style="--background: white;color: black;" (click)="save()">Registrar
+                </ion-button>
+                <ion-button class="botonGuaradar" expand="block" style="--background: white;color: black;" [routerLink]="['/login']" routerLinkActive="router-link-active">Cancelar
+                </ion-button>
+              </ion-item>
+
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+</ion-content>

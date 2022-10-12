@@ -1,0 +1,6 @@
+{
+	"appId": "com.premiapp.login",
+	"appName": "Premi App",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
